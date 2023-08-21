@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.de0653b8.css",
+    "main.js": "/static/js/main.41a9578a.js",
+    "static/media/curtissite.PNG": "/static/media/curtissite.61efa1e081d0b25de9ae.PNG",
+    "static/media/gamesite.png": "/static/media/gamesite.6fb999209283ee1aef28.png",
+    "static/media/blogsite.PNG": "/static/media/blogsite.9f608301a2d3b85520f8.PNG",
+    "static/media/docpage.PNG": "/static/media/docpage.bf3257ec793a870010d2.PNG",
+    "index.html": "/index.html",
+    "main.de0653b8.css.map": "/static/css/main.de0653b8.css.map",
+    "main.41a9578a.js.map": "/static/js/main.41a9578a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de0653b8.css",
+    "static/js/main.41a9578a.js"
+  ]
+}
