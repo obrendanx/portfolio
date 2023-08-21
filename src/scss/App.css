@@ -20,3 +20,8 @@ html{
 .filler{
   height:50px;
 }
+
+.App{
+  height:100%;
+  position:relative;
+}
