@@ -40,7 +40,7 @@ function Nav() {
     <Wrapper>
       <Navbar>
         <List>
-          <ListItem><Link href="#">Welcome</Link></ListItem>
+          <ListItem><Link href="#welcome">Welcome</Link></ListItem>
           <ListItem><Link href="#projects">Projects</Link></ListItem>
           <ListItem><Link href="#contact">Contact</Link></ListItem>
         </List>

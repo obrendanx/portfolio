@@ -29,7 +29,7 @@ function PortfolioCard() {
     const bookTags = ["Sass", "NodeJS", "HTML5", "CSS3"]
 
   return (
-    <Wrapper>   
+    <Wrapper id="projects">   
         <Card 
             title="Japanese Animation Information Site" 
             tags={gamesiteTags} link="https://bewen.net" 

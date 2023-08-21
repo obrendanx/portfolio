@@ -31,32 +31,42 @@ const Header = styled.h2`
 `
 
 const Description = styled.p`
-    max-height:150px;
+    max-height:100px;
     font-size:1.3em;
     color:#fff;
     font-weight:900;
     font-family: 'Smooch Sans', sans-serif;
+    font-size:1em;
+    padding:10px;
+    background:#B7ADCF;
+    border-radius:0 0 5px 5px;
 `
 
 const Git = styled.div`
 
 `
 
+const MainWrap = styled.div`
+    height:400px;
+    width:40%;
+    margin-bottom:50px;
+`
+
 function Card({ title, tags, link, image, description, git }) {
     const Wrapper = styled.div`
         height:300px;
-        width:40%;
-        margin-bottom:50px;
+        width:100%;
         padding:10px 2% 10px 2%;
         background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(${image});
         background-size:100% 100%;
         background-repeat:no-repeat;
         position:relative;
-        border-radius:5%;
+        border-radius:5px 5px 0% 0;
     `
 
   return (
-      <Wrapper>
+      <MainWrap>
+        <Wrapper>
             <Header>
             <Link href={link} target="_blank">
                 {title}
@@ -69,9 +79,10 @@ function Card({ title, tags, link, image, description, git }) {
                 </Tag>
             ))}
             </Tags>
-            <Git><a href={git}><BsGithub/></a></Git>
-            <Description>{description}</Description>
-      </Wrapper>
+            {/* <Git><a href={git}><BsGithub/></a></Git> */}
+        </Wrapper>
+        <Description>{description}</Description>
+      </MainWrap>
   );
 }
 
