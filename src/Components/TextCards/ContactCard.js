@@ -37,6 +37,11 @@ const SubWrap = styled.div`
     padding-top:30vh;
 `
 
+const List = styled.ul`
+    width:80%;
+    margin-left:10%;
+`
+
 function ContactCard() {
   return (
     <Wrapper id="contact">
@@ -45,13 +50,13 @@ function ContactCard() {
 
             <div class="social_links">
             <nav>
-                <ul>
+                <List>
                 <ListItem><Link href="#"><i class="fab fa-facebook-square"></i> Facebook</Link></ListItem>
                 <ListItem><Link href="https://gitlab.com/obrendanx"><i class="fab fa-github"></i> Github</Link></ListItem>
                 <ListItem><Link href="#"><i class="fab fa-twitter"></i> Twitter</Link></ListItem>
                 <ListItem><Link href="mailto:brendanewen16@outlook.com"><i class="fas fa-at"></i> Send a mail</Link></ListItem>
                 <ListItem><Link href="tel:07904576057"><i class="fas fa-mobile-alt"></i> Call me</Link></ListItem>
-                </ul>
+                </List>
             </nav>
             </div>
         </SubWrap>

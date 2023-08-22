@@ -10,16 +10,23 @@ const Tags = styled.div`
 
 const Tag = styled.span`
     margin-left:5px;
-    color:#fff;
+    color:#000;
     background:rgba(183, 173, 207, 0.6);
     padding:5px;
+    &:hover{
+        color:#DEE7E7;
+        transition:0.25s;
+    }
 `
 
 const Link = styled.a`
-    color:#fff;
+    color:#000;
     text-decoration:none;
     &:hover{
         color:#DEE7E7;
+    }
+    @media (max-width: 720px) {
+        text-decoration:underline;
     }
 `
 
@@ -31,15 +38,13 @@ const Header = styled.h2`
 `
 
 const Description = styled.p`
-    max-height:100px;
+    min-height:100px;
     font-size:1.3em;
-    color:#fff;
+    color:#000;
     font-weight:900;
     font-family: 'Smooch Sans', sans-serif;
     font-size:1em;
     padding:10px;
-    background:#B7ADCF;
-    border-radius:0 0 5px 5px;
 `
 
 const Git = styled.div`
@@ -47,31 +52,82 @@ const Git = styled.div`
 `
 
 const MainWrap = styled.div`
-    height:400px;
-    width:40%;
+    height:250px;
+    width:80%;
+    padding:2%;
     margin-bottom:50px;
+    display:flex;
+    flex-direction:row;
+    &:hover{
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius:20px;
+        transition:0.5s;
+    }
+    @media (max-width: 900px) {
+        width: 80%;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius:20px;
+    }
+    @media (max-width: 720px) {
+        flex-direction:column-reverse;
+        height:450px;
+        padding:3%;
+    }
+`
+
+const Image = styled.div`
+    height:300px;
+    width:20%;
+    img{
+        height:40%;
+        width:90%;
+        &:hover{
+            opacity:0.8;
+            transition:0.5s;
+        }
+        @media (max-width: 900px) {
+            height:60%;
+        }
+        @media (max-width: 720px) {
+            height:70%;
+        }
+    }
+    @media (max-width: 900px) {
+        width:35%;
+    }
+    @media (max-width: 720px) {
+        width:80%;
+        height:200px;
+    }
 `
 
 function Card({ title, tags, link, image, description, git }) {
     const Wrapper = styled.div`
         height:300px;
-        width:100%;
+        width:80%;
         padding:10px 2% 10px 2%;
-        background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(${image});
-        background-size:100% 100%;
-        background-repeat:no-repeat;
         position:relative;
         border-radius:5px 5px 0% 0;
+        @media (max-width: 720px) {
+            width:100%;
+            height:200px;
+        }
     `
 
   return (
       <MainWrap>
+        <Image>
+            <img src={image} alt="portfolio card here"/>
+        </Image>
         <Wrapper>
             <Header>
             <Link href={link} target="_blank">
                 {title}
             </Link>
             </Header>
+            <Description>{description}</Description>
             <Tags>
             {tags.map((tag, index) => (
                 <Tag key={index} className="tag">
@@ -81,7 +137,6 @@ function Card({ title, tags, link, image, description, git }) {
             </Tags>
             {/* <Git><a href={git}><BsGithub/></a></Git> */}
         </Wrapper>
-        <Description>{description}</Description>
       </MainWrap>
   );
 }

@@ -11,6 +11,9 @@ const Footer = styled.div`
   height:10vh;
   background:#DEE7E7;
   bottom:0;
+  @media (max-width: 900px) {
+    font-size:0.6em;
+  }
 `
 
 const ParagraphLeft = styled.p`

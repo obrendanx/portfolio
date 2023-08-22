@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     min-height:500px;
     width:100%;
     background:#535657;
-    padding-top:50px;
+    padding-top:100px;
     padding-bottom:50px;
     scroll-margin-top: 50px;
     display:flex;
