@@ -12,11 +12,12 @@ const Wrapper = styled.div`
 const Header = styled.h2`
     height:25px;
     font-size:50px;
+    font-family: 'Smooch Sans', sans-serif;
 `
 
 const ListItem = styled.li`
     display:inline-block;
-    margin-left:30px;
+    margin:30px;
     position:relative;
     height:25px;
     top:100px;
@@ -38,24 +39,22 @@ const SubWrap = styled.div`
 `
 
 const List = styled.ul`
-    width:80%;
-    margin-left:10%;
+    
 `
 
 function ContactCard() {
   return (
     <Wrapper id="contact">
         <SubWrap>
-            <Header>Lets work together...</Header>
+            <Header>Lets work together</Header>
 
-            <div class="social_links">
+            <div>
             <nav>
                 <List>
-                <ListItem><Link href="#"><i class="fab fa-facebook-square"></i> Facebook</Link></ListItem>
-                <ListItem><Link href="https://gitlab.com/obrendanx"><i class="fab fa-github"></i> Github</Link></ListItem>
-                <ListItem><Link href="#"><i class="fab fa-twitter"></i> Twitter</Link></ListItem>
-                <ListItem><Link href="mailto:brendanewen16@outlook.com"><i class="fas fa-at"></i> Send a mail</Link></ListItem>
-                <ListItem><Link href="tel:07904576057"><i class="fas fa-mobile-alt"></i> Call me</Link></ListItem>
+                    <ListItem><Link href="https://gitlab.com/obrendanx"><i class="fab fa-github"></i></Link></ListItem>
+                    <ListItem><Link href="www.linkedin.com/in/brendan-ewen-8aa0b322a"><i class="fab fa-linkedin"></i></Link></ListItem>
+                    <ListItem><Link href="mailto:brendanewen16@outlook.com"><i class="fas fa-at"></i></Link></ListItem>
+                    <ListItem><Link href="tel:07904576057"><i class="fas fa-mobile-alt"></i></Link></ListItem>
                 </List>
             </nav>
             </div>

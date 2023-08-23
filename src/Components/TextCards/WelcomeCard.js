@@ -29,7 +29,7 @@ const HeaderTwo = styled.h3`
 function WelcomeCard() {
   return (
     <Wrapper id="welcome">
-        <HeaderOne>Hey I am Brendan</HeaderOne>
+        <HeaderOne>Hey, I am Brendan</HeaderOne>
         <HeaderTwo>a web developer</HeaderTwo>
     </Wrapper>
   )

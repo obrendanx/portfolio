@@ -14,6 +14,9 @@ const Footer = styled.div`
   @media (max-width: 900px) {
     font-size:0.6em;
   }
+  @media (max-width: 650px) {
+    font-size:0.4em;
+  }
 `
 
 const ParagraphLeft = styled.p`
@@ -33,7 +36,7 @@ const ParagrapghRight = styled.p`
 
 const Right = styled.div`
   float:left;
-  width:20%;
+  width:60%;
 `
 
 const Left = styled.div`

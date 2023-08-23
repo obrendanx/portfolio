@@ -37,22 +37,22 @@ const Header = styled.h2`
     font-weight:600;
 `
 
-const Description = styled.p`
-    min-height:100px;
-    font-size:1.3em;
-    color:#000;
-    font-weight:900;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size:1em;
-    padding:10px;
-`
+// const Description = styled.p`
+//     min-height:100px;
+//     font-size:1.3em;
+//     color:#000;
+//     font-weight:900;
+//     font-family: 'Smooch Sans', sans-serif;
+//     font-size:1em;
+//     padding:10px;
+// `
 
 const Git = styled.div`
 
 `
 
 const MainWrap = styled.div`
-    height:250px;
+    min-height:150px;
     width:80%;
     padding:2%;
     margin-bottom:50px;
@@ -72,47 +72,41 @@ const MainWrap = styled.div`
     }
     @media (max-width: 720px) {
         flex-direction:column-reverse;
-        height:450px;
+        height:320px;
         padding:3%;
     }
 `
 
 const Image = styled.div`
-    height:300px;
+    height:120px;
     width:20%;
     img{
-        height:40%;
-        width:90%;
+        height:100%;
+        width:100%;
         &:hover{
             opacity:0.8;
             transition:0.5s;
         }
-        @media (max-width: 900px) {
-            height:60%;
-        }
-        @media (max-width: 720px) {
-            height:70%;
-        }
     }
     @media (max-width: 900px) {
-        width:35%;
+        width:30%;
     }
     @media (max-width: 720px) {
-        width:80%;
+        width:100%;
         height:200px;
     }
 `
 
 function Card({ title, tags, link, image, description, git }) {
     const Wrapper = styled.div`
-        height:300px;
+        min-height:120px;
         width:80%;
         padding:10px 2% 10px 2%;
         position:relative;
         border-radius:5px 5px 0% 0;
         @media (max-width: 720px) {
             width:100%;
-            height:200px;
+            min-height:100px;
         }
     `
 
@@ -127,7 +121,7 @@ function Card({ title, tags, link, image, description, git }) {
                 {title}
             </Link>
             </Header>
-            <Description>{description}</Description>
+            {/* <Description>{description}</Description> */}
             <Tags>
             {tags.map((tag, index) => (
                 <Tag key={index} className="tag">

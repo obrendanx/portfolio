@@ -4,7 +4,7 @@ import Card from './Card'
 
 //Card Images
 import gamesite from '../../Images/gamesite.png'
-import blogsite from '../../Images/blogsite.PNG'
+import blogsite from '../../Images/blogsite.png'
 import bookstore from '../../Images/curtissite.PNG'
 import docpage from '../../Images/docpage.PNG'
 
@@ -31,34 +31,27 @@ function PortfolioCard() {
   return (
     <Wrapper id="projects">   
         <Card 
-            title="Japanese Animation Information Site" 
+            title="Anime News" 
             tags={gamesiteTags} link="https://bewen.net" 
             image={gamesite}
-            description="This REACT app I have made is designed to inform users 
-            about various japanese media. Currently the user can make their own 
-            account, make fourm posts, save their favourite anime as well as keep 
-            track of the episode and season they are on by visiting their profile page."
         />
         <Card 
             title="Blog Page" 
             tags={blogTags} 
-            imag={blogsite}
+            image={blogsite}
             link="https://blog-rnmz.onrender.com/"
-            description="A basic blog webpage layout"
         />
         <Card 
             title="Documentation Page" 
             tags={docTags} 
             image={docpage}
             link="https://documentation-page-11sw.onrender.com/"
-            description="A simple python documentation page"
         />
         <Card 
             title="Book Store Page" 
             tags={bookTags} 
             image={bookstore}
             link="https://book-page.onrender.com/"
-            description="A simple book store page"
         />
     </Wrapper>
   )
