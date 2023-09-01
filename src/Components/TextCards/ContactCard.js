@@ -4,7 +4,7 @@ import React from 'react'
 const Wrapper = styled.div`
     height:100vh;
     width:100vw;
-    background:#C5CFAD;
+    background:#B7ADCF;
     scroll-margin-top: 50px;
     text-align:center;
 `
@@ -30,7 +30,7 @@ const Link = styled.a`
     text-transform:uppercase;
     transition: 1s;
     &:hover{
-        color:#B7ADCF;
+        color:#535657;
     }
 `
 

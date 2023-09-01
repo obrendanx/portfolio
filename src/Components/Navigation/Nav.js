@@ -29,6 +29,10 @@ const Link = styled.a`
   font-family: 'Smooch Sans', sans-serif;
   font-weight:600;
   font-size:1.1em;
+  text-align:center;
+  &:hover{
+    border-bottom:solid 4px #535657;
+  }
 `
 
 const Navbar = styled.nav`
