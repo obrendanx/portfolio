@@ -13,6 +13,7 @@ const Header = styled.h2`
     height:25px;
     font-size:50px;
     font-family: 'Smooch Sans', sans-serif;
+    color:#fff;
 `
 
 const ListItem = styled.li`
